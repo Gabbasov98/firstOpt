@@ -1,0 +1,25 @@
+@import "../vars";
+.display1,
+.display2 {
+    font-size: 49.1px;
+    font-weight: 700;
+    color: $grey;
+    font-family: $font2;
+    text-transform: uppercase;
+    span {
+        color: $primary;
+    }
+}
+
+.display2 {
+    font-size: 43.9px;
+}
+
+@media screen and (max-width: 576px) {
+    .display1 {
+        font-size: 38px;
+    }
+    .display2 {
+        font-size: 35px;
+    }
+}

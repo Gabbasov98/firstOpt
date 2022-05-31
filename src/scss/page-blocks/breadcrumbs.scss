@@ -1,0 +1,36 @@
+@import "../vars.scss";
+.breadcrumbs {
+    margin: 10px 0 15px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 110%;
+        color: $grey;
+        position: relative;
+        font-weight: 400;
+        display: inline-flex;
+        &:last-child {
+            pointer-events: none;
+            span {
+                text-decoration: underline;
+            }
+        }
+        &:first-child {
+            align-items: flex-end;
+            img {
+                margin-right: 11px;
+            }
+        }
+        &:not(:first-child) {
+            // margin-left: 30px;
+            &:before {
+                content: '-';
+                z-index: 1;
+                margin: 0 13px;
+            }
+        }
+    }
+}

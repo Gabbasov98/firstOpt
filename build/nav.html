@@ -1,0 +1,93 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="tarif.html" style="display: block; margin-bottom: 20px;">
+            ТАРИФ 
+        </a>
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#orderModal">
+            Оставьте заявку 
+        </button>
+
+    </div>
+
+    <div class="modal fade" id="orderModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.png" alt="">
+        </button>
+
+        <div class="modal__title display2">
+            <span>Оставьте заявку на подключение</span>
+        </div>
+        <div class="modal__desc">и наши менеджеры свяжутся с Вами в течении 30 минут!</div>
+
+        <form action="" class="modal__form">
+            <fieldset class='form-group'>
+                <img src="img/user.webp" alt="">
+                <input type='text' placeholder="Ваше имя" />
+            </fieldset>
+            <fieldset class='form-group'>
+                <img src="img/phone2.webp" alt="">
+                <input type='text' placeholder="Ваш номер телефона" />
+            </fieldset>
+            <fieldset class='form-group'>
+                <img src="img/marker.webp" alt="">
+                <input type='text' placeholder="Местоположение дома/кадастровый номер" />
+            </fieldset>
+            <button class="modal__btn btn btn-red">
+                Отправить заявку
+            </button>
+            <div class="modal__check check">
+                <input type='checkbox' />
+                <label>
+                    Нажимая кнопку, Вы даёте согласие на обработку
+                    <a href="">персональных данных</a>
+                </label>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+<!-- <div class="modal-backdrop show"></div> -->
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@import '../mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@include font-face('Bebas Neue',
+'BebasNeueBold',
+700);
+@include font-face('Proxima Nova',
+'ProximaNova-Regular',
+700);

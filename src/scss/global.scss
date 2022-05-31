@@ -1,0 +1,21 @@
+@import 'vars';
+html {
+    width: 100%;
+}
+
+body {
+    font-family: $font1;
+    font-weight: 400;
+    color: $black;
+    background-image: url(../img/bg.webp);
+    background-size: cover;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+}
+
+a {
+    &:hover {
+        color: $primary;
+    }
+}
