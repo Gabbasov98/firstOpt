@@ -112,7 +112,7 @@
         &:before {
             content: '';
             position: fixed;
-            z-index: 1;
+            z-index: 4;
             background-color: #fff;
             left: 0;
             top: 0;
@@ -136,10 +136,10 @@
         }
         &__logo {
             position: relative;
-            z-index: 2;
+            z-index: 5;
         }
         &__burger {
-            z-index: 2;
+            z-index: 5;
             position: relative;
             display: flex;
             align-items: center;

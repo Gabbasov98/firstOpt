@@ -22,6 +22,14 @@
             &:not(:last-child) {
                 margin-right: 29px;
             }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+            img {
+                transition: all .225s;
+            }
         }
     }
     &__links {
